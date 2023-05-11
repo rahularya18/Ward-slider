@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.slides{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slides::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index:11;
+}
+.slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img_overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,50%);
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+    color: #fff;
+    font-weight: 600;
+}
+.img_overlay p{
+    
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    margin-top: -100px;
+    font-weight: 600;
+    
+    
+}
+.img_overlay h1{
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 50px;
+    line-height: 1.4;
+    text-transform: capitalize;   
+}
+.img_overlay h3{
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+.img_overlay a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.img_overlay a:hover{
+    background: #239b56;
+}
+
+
+
+button {
+    background-color: #3b61dd;
+border: 1px solid #3b61dd;
+border-radius: 4px;
+color: #fff;
+font-size: 15px;
+padding: 10px 30px;
+transition: all 0.3s ease 0s;
+font-weight: 600;
+text-transform: capitalize;
+display: inline-block;
+}
+
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover{
+    /* border:none; */
+    border-color: #ffff;    
+    background: transparent;
+    background-color: rgb(51, 51, 51);;
+  color: #fff;
+  outline: 0;
+  background-color: transparent;
+}
+
+btn{
+    background: rgba(0,0,0,0.6);
+    padding: 2rem;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.btn::after{
+color: #fff;
+}
+
+.swiper-button-next{
+    margin-right: 50px;
+}
+.swiper-button-prev{
+    margin-left: 20px;
+}
+
+@media(max-width:900px){
+    .swiper-button-next{
+        margin-right: 20px;
+    }
+}
+
+.swiper-button-prev{
+    margin-left: 20px;
+}
+.img_overlay p{
+    font-size: 2rem;
+}
+.img_overlay h2{
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+
+.navbar {
+   
+    width: 85%;
+    margin: auto;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120opx;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+font-weight: 600;
+text-transform: capitalize;
+font-family: 'Jost', sans-serif;
+transition: .5s;
+font-size: 17px;
+padding: 24px 0 26px;
+display: block;
+text-decoration: none;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #16161f8e;
+    position: absolute;
+    left: 0;
+    bottom: 23px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+#header{
+    position:absolute;
+    z-index: 25;
+    background-color:#3b61dd54;
+    min-width: 100vw;
+}
+
+.slides img:nth-child(1) {
+    animation: slide 9s infinite;
+  }
+  
+  .slides img:nth-child(2) {
+    animation: slide 9s infinite 3s;
+  }
+  
+  .slides img:nth-child(3) {
+    animation: slide 9s infinite 6s;
+  }

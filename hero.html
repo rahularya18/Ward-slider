@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta -equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Assets/Css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ward Travel Agency Landing Page</title>
+</head>
+
+<body>
+    <!-- =====Hero section==== -->
+    <!-- <section id="hero" class="heroclass">
+        <div class="banner"> -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+
+    </header>
+    <!--==============================header=================================-->
+    <header id="header"></header>
+    <script type="module">
+        import headerModule from "./modules/header.js";
+        let head = document.getElementById("header");
+        head.innerHTML = headerModule();
+    </script>
+    </div>
+
+
+    <div class="container swiper mySwiper">
+        <div class="content swiper-wrapper">
+            <div class="slides swiper-slide">
+                <img src="./Assets/img/wall3.jpg" alt="">
+                <div class="img_overlay">
+                    <p>We are here to Make your Travel Comfort.</p>
+                    <h1>Make Your Tour Amazing
+                        <br> With Us
+                    </h1>
+                    <button type="button"><span></span> Discover Now</button>
+                    <button type="btn"> Watch Intro</button>
+                </div>
+            </div>
+            <div class="slides swiper-slide">
+                <img src="./Assets/img/wall2.jpg" alt="">
+                <div class="img_overlay">
+                    <p>We are here to Make your Travel Comfort.</p>
+                    <h1>Explore the World
+                        <br> With Ease
+                    </h1>
+                    <button type="button"><span></span> Discover Now</button>
+                    <button type="btn"> Watch Intro</button>
+
+                </div>
+            </div>
+            <div class="slides swiper-slide">
+                <img src="./Assets/img/wall1.jpg" alt="">
+                <div class="img_overlay">
+                    <p>We are here to Make your Travel Comfort.</p>
+                    <h1>Travel Most Beautiful Places
+                        <br> With Us
+                    </h1>
+                    <button type="button"><span></span> Discover Now</button>
+                    <button type="button"> Watch Intro</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next btn"></div>
+        <div class="swiper-button-prev btn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </div>
+    </div>
+    <script src="Assets/js/script.js"></script>
+    <script src="Assets/js/sc.js"></script>
+</body>
+
+</html>
+
+
+    <div class="content swiper-wrapper">
+      <!-- Slides go here -->
+    </div>
+    <div class="swiper-button-next btn"></div>
+    <div class="swiper-button-prev btn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Set autoplay to true and delay to 3000ms (3 seconds)
+      autoplay: {
+        delay: 3000,
+      },
+      // Add other options and settings as needed
+      // ...
+    });
+  </script>
+  
